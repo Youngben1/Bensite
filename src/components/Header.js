@@ -1,5 +1,6 @@
 import React from 'react';
-import { Stack, Circle, Flex, Box, Text, useColorMode, useMediaQuery, Image, Button } from '@chakra-ui/react';
+import { Stack, Flex, Box, Text, useColorMode, useMediaQuery, Button, Image } from '@chakra-ui/react';
+import logo from './Image/noface.jpeg';
 
 function Header() {
 
@@ -11,7 +12,7 @@ function Header() {
     return (
         <Stack>
             {/* <Circle position="absolute" bg="blue.100" opacity="0.1" */}
-                w="300px" h="300px" alignSelf="flex-end" />
+                {/* w="300px" h="300px" alignSelf="flex-end" /> */}
                 <Flex direction={isNotSmallerScreen ? "row" : "column"}
                     spacing="200px" p={isNotSmallerScreen ? "32" : "0"}
                     alignself="flex-start">
@@ -24,7 +25,7 @@ function Header() {
                         <Image alignself="center" mt={isNotSmallerScreen ? "0" : "12"}
                             mb={isNotSmallerScreen ? "0" : "12"} borderRadius='full'
                             backgroundColor="transparent" boxShadow="lg"
-                            boxSize="300px" src='https://www.instagram.com/p/B58lb60AHgs/' />
+                            boxSize="300px" src={logo} />
                     </Flex>
 
         </Stack>

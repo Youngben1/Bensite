@@ -22,14 +22,14 @@ function Profile() {
             <Box alingself="center" px="32" py="16">
                 <Text fontWeight="bold" fontSize="2xl">Self Taught Developer, conversant with html,css and Javascript, React over Next, haha.</Text>
                 <Flex direction={isNotSmallerScreen ? "row" : "column"} mt={8} >
-                    <Flex rounded="xl" direction="column" mt={4} bg="blue.400" h="30vh" w="30vh" justify="flex-end">
+                    <Flex rounded="xl" direction="column" mr={3} mt={4} bg="blue.400" h="30vh" w="30vh" justify="flex-end">
                         <Icon> color="teal" p="4" as={DiReact} w="24" h="24" </Icon>
                         <Text color="black" p="4" fontSize="xl" fontWeight="semibold">  
                             React   
                         </Text>
                     </Flex>
 
-                    <Flex rounded="xl" direction="column" mt={4} bg="blue.400" h="30vh" w="30vh" justify="flex-end" _hover={{bg: "yellow.400", }}>
+                    <Flex rounded="xl" direction="column" mr={3} mt={4} bg="blue.400" h="30vh" w="30vh" justify="flex-end" _hover={{bg: "yellow.400", }}>
                         <Icon> color="teal" p="4" as={DiSafari} w="24" h="24" </Icon>
                         <Text color="black" p="4" fontSize="xl" fontWeight="semibold">  
                               Safari
